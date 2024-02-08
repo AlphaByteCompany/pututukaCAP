@@ -44,7 +44,7 @@
   
 } 
 .home {
-    background-color: pink; 
+    background-color: #E36B94; 
     border: none;
     padding:3vh 5vh; 
     border-radius: 5vh;
@@ -54,7 +54,8 @@
     padding:3vh 5vh; 
     border-radius: 6vh; 
     border: 1px solid gray; 
-    color: gray;
+    color: gray; 
+    background: transparent;
 }
 .title {
   
