@@ -1,28 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   <link rel="stylesheet" href="assets/css/index.css">   
-   <link rel="shortcut icon" href="assets/utilites/LOGOMARCA-PUTUTUKA-AZUL-PNG.png" type="image/x-icon">
-   <meta name="description" content="Realize o cadastro dos seus  Clientes para aumentar sua base de Leads!">
-   <meta name = "author" content="SCS Digital  Business ">
-   <title>Cadastre seus Contatos</title>
-</head>
-<body> 
-   <section>
-      <form action="https://api.sheetmonkey.io/form/oXc3oDuoTzb1RHAGtG4bk8" method="post"> 
-         <div class="logo"><img src="assets/utilites/LOGOMARCA-PUTUTUKA-AZUL-PNG.png" alt=""></div> 
-         <div class="form-text">
-            <small>Insira os dados do Cliente</small>
-         </div>
-        <input placeholder="Nome"  name="Nome" type="text" required> 
-     <input placeholder="Tel(+55)" name="Telefone" type="tel" required>
-        <input placeholder="E-mail" name="E-mail" type="email">
-         <a href="thanks-page/thanks.html"><button type="submit"> Cadastrar</button></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/utilites/LOGOMARCA-PUTUTUKA-AZUL-PNG.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Realize o cadastro dos seus  Clientes para aumentar sua base de Leads!"
+    />
+    <meta name="author" content="SCS Digital  Business " />
+    <title>Cadastre seus Contatos</title>
+  </head>
+  <body>
+    <header class="nav-bar">
+      <nav class="links-nav">
+        <ul class="links">
+          <li><img src="assets/utilites/leads.svg" alt=""></li>
+          <li><img src="assets/utilites/new-selected.svg" alt=""></li>
+          <li><img src="assets/utilites/dash.svg" alt=""></li>
+          <li class="perfil"><img src="assets/utilites/LOGOMARCA-PUTUTUKA-AZUL-PNG.png" alt=""></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="form-text">
+        <h1>DADOS</h1>
+      </div>
+      <form
+        class="Sign-up"
+        action="https://api.sheetmonkey.io/form/oXc3oDuoTzb1RHAGtG4bk8"
+        method="post"
+      >
+        <div class="input-area">
+          <input placeholder="Nome" id="name"  name="Nome" type="text" required />
+          <div class="errorName"><small id="errorName"></small></div>
+        </div>
+        <div class="input-area">
+          <input placeholder="Telefone" name="Telefone" id="tell" type="tel" required />
+          <div class="errorTell"><small id="errorTell"> </small></div>
+        </div>
+        <div class="input-area">
+          <input placeholder="E-mail" name="E-mail" id="email" type="email" />
+          <div class="errorEmail"><small id="errorEmail"></small></div>
+        </div>
+        <a href="thanks-page/thanks.html"
+          ><button id="register"  type="submit">CADASTRAR</button></a
+        >
       </form>
-   </section>
-   
-</body>
+    </section> 
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
 </html>
