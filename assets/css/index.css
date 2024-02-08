@@ -40,7 +40,7 @@ section {
 
 }
 .form-text {
-  padding-bottom: 5vh;
+  padding-bottom: 10vh;
   padding-left: 2vh;
   color: rgb(65, 65, 65);
   width: 100vw;
@@ -68,16 +68,29 @@ section form {
 }
 
 form input {
-  padding: 3vh 5vh;
+  padding: 2vh 5vh;
   border: none;
-  font-size: 1.2em;
+  font-size: 1.1em;
   border: 2px solid #CDCDCD;
   border-radius: 1vh;
   width: calc(90%);
-
+  padding-left: 14%;
   text-align: justify;
 
   background-color: transparent;
+} 
+.inputs{
+  width: 100%; 
+  
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+
+} 
+.inputs img {
+  height: 3vh; 
+  position: relative; 
+  left: 10%;
 }
 .input-area {
   width: 100%;
@@ -110,7 +123,7 @@ form a {
 }
 form button {
   padding-top: 5vh;
-  padding: 3vh 5vh;
+  padding: 2vh 5vh;
   border-radius: 4vh;
   width: 90vw;
 
@@ -119,7 +132,7 @@ form button {
   color: white;
   border: none;
   transition: 1.05s;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 form button:hover {
   background-color: #a0f0f8;

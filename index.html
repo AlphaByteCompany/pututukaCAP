@@ -21,10 +21,10 @@
     <header class="nav-bar">
       <nav class="links-nav">
         <ul class="links">
-          <li><img src="assets/utilites/leads.svg" alt=""></li>
-          <li><img src="assets/utilites/new-selected.svg" alt=""></li>
-          <li><img src="assets/utilites/dash.svg" alt=""></li>
-          <li class="perfil"><img src="assets/utilites/LOGOMARCA-PUTUTUKA-AZUL-PNG.png" alt=""></li>
+          <li id="leads" ><img src="assets/utilites/leads.svg" alt=""></li>
+          <li id="new" ><img src="assets/utilites/new-selected.svg" alt=""></li>
+          <li id="dash" ><img src="assets/utilites/dash.svg" alt=""></li>
+          <li id="perfil"  class="perfil"><img src="assets/utilites/LOGOMARCA-PUTUTUKA-AZUL-PNG.png" alt=""></li>
         </ul>
       </nav>
     </header>
@@ -38,15 +38,15 @@
         method="post"
       >
         <div class="input-area">
-          <input placeholder="Nome" id="name"  name="Nome" type="text" required />
+          <div class="inputs"><img src="assets/utilites/name.svg" alt=""> <input placeholder="Nome" id="name"  name="Nome" type="text" required /></div>
           <div class="errorName"><small id="errorName"></small></div>
         </div>
         <div class="input-area">
-          <input placeholder="Telefone" name="Telefone" id="tell" type="tel" required />
+          <div class="inputs"><img src="assets/utilites/tell.svg" alt=""> <input placeholder="Telefone" name="Telefone" id="tell" type="tel" required /></div>
           <div class="errorTell"><small id="errorTell"> </small></div>
         </div>
         <div class="input-area">
-          <input placeholder="E-mail" name="E-mail" id="email" type="email" />
+          <div class="inputs"> <img src="assets/utilites/email.svg" alt=""> <input placeholder="E-mail" name="E-mail" id="email" type="email" /></div>
           <div class="errorEmail"><small id="errorEmail"></small></div>
         </div>
         <a href="thanks-page/thanks.html"
@@ -54,6 +54,14 @@
         >
       </form>
     </section> 
-    <script type="module" src="assets/js/main.js"></script>
+    <script src="assets/js/jquery-3.7.1.js"></script>  
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"
+    integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+    <script type="module" src="assets/js/main.js"></script>   
+    <script src="assets/js/redirections.js"></script>
   </body>
 </html>
