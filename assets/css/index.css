@@ -76,7 +76,6 @@ form input {
   width: calc(90%);
   padding-left: 14%;
   text-align: justify;
-
   background-color: transparent;
 } 
 .inputs{
@@ -89,8 +88,9 @@ form input {
 } 
 .inputs img {
   height: 3vh; 
-  position: relative; 
-  left: 10%;
+  position: absolute; 
+  left: 10%; 
+  filter: opacity(0.5);
 }
 .input-area {
   width: 100%;
