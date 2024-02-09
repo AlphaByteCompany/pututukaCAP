@@ -39,11 +39,19 @@ section {
   clip-path: circle();
 
 }
-.form-text {
+.form-text { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding-bottom: 10vh;
   padding-left: 2vh;
   color: rgb(65, 65, 65);
-  width: 100vw;
+  width: 100vw; 
+  font-size: 0.8em;
+} 
+.form-text img {
+  height: 20vh; 
 }
 
 section form {
